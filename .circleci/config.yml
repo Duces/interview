@@ -1,16 +1,19 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/bko-java/src/main/java
+
     docker:
-      - image: debian:stretch
+      - image: circleci/openjdk:8-jdk-browsers
 
     steps:
-      - checkout
+      - checkout:
+          path: ~/bko-java
 
       - run:
           name: Build
-          command: cat sampleoutput.txt
+          command: javac interview/Interview.java
 
       - run:
           name: Test
-          command: echo "Not implemented" && exit 1
+          command: java interview.Interview
