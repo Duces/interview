@@ -1,4 +1,4 @@
-package Komoot;
+package interview.Services;
 
 import interview.Service;
 

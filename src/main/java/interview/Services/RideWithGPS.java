@@ -1,4 +1,4 @@
-package RWGPS;
+package interview.Services;
 
 import interview.Service;
 

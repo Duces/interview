@@ -1,4 +1,4 @@
-package strava;
+package interview.Services;
 
 import interview.Service;
 
