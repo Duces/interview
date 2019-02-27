@@ -22,7 +22,7 @@ public class Services {
 		return allRoutes;
 	}
 
-	private List<String> getRoutesAsListForUser(String userId) {
+	private List<String> getRoutesAsListForUser() {
 		List<String> allRoutes = new ArrayList<String>();
 		
 		for( Service service : services ) {
@@ -33,13 +33,13 @@ public class Services {
 	}
 
 	public List<String> getServiceNames() {
-		List<String> allRoutes = new ArrayList<String>();
+		List<String> serviceNames = new ArrayList<String>();
 		
 		for( Service service : services ) {
-			allRoutes.add(service.getName());
+			serviceNames.add(service.getName());
 		}
 		
-		return allRoutes;
+		return serviceNames;
 	}
 	
 
@@ -51,12 +51,12 @@ public class Services {
 		return new ArrayList<String>( new HashSet<String>(getRoutesAsList()));
 	}
 	
-	public List<String> getRoutesForUser(String userId) {
-		return getRoutesAsListForUser(userId);
+	public List<String> getRoutesForUser() {
+		return getRoutesAsListForUser();
 	}
 	
 	public List<String> getRoutesForUser( List<Service> services, String userId ) {
-		return getRoutesAsListForUser(userId);
+		return getRoutesAsListForUser();
 	}
 
 }
