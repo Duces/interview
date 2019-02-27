@@ -1,4 +1,4 @@
-package interview.Services;
+package interview;
 
 import interview.Service;
 

@@ -1,5 +1,5 @@
 package interview;
 
-interface UserIdStrategy {
+public interface UserIdStrategy {
     String augmentWithUserId();
 }
