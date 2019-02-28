@@ -25,12 +25,12 @@ public class Service {
 		return name;
 	}
 
-	public List<String> getRoutesForUser( ) {
+	public List<String> getRoutesForUser( String userId ) {
 
 		List<String> userRoutes = new ArrayList<String>();
 		
 		for( String route : getRoutes() ) {
-			userRoutes.add( String.format(idStrategy.augmentWithUserId(), route));
+			userRoutes.add( String.format(idStrategy.augmentWithUserId(userId), route));
 		}
 		return userRoutes;
 	}
