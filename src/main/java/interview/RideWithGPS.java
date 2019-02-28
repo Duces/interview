@@ -6,7 +6,7 @@ public class RideWithGPS extends Service {
 	
 	public RideWithGPS() {
 
-		super("RWGPS", routes, (String UserId) -> UserId + "%s");
+		super("RWGPS", routes, (String userId, String route) -> userId + route );
 	}
 
 };

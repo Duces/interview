@@ -30,7 +30,7 @@ public class Service {
 		List<String> userRoutes = new ArrayList<String>();
 		
 		for( String route : getRoutes() ) {
-			userRoutes.add( String.format(idStrategy.augmentWithUserId(userId), route));
+			userRoutes.add(idStrategy.augmentWithUserId(userId, route));
 		}
 		return userRoutes;
 	}

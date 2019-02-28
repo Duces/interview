@@ -53,9 +53,5 @@ public class Services {
 	public List<String> getRoutesForUser(String userId) {
 		return getRoutesAsListForUser(userId);
 	}
-	
-	public List<String> getRoutesForUser( List<Service> services, String userId ) {
-		return getRoutesAsListForUser(userId);
-	}
 
 }
