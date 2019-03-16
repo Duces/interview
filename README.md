@@ -53,4 +53,6 @@ return the user's routes for only the services listed.
 
 ## Building/Running
 
-TODO: please provide instructions to build and run your program(s) along with any require tools an dependencies.
+I coding this challenge in Kotlin using IntelliJ IDEA
+It can be downloaded here: http://www.jetbrains.com/idea/download/index.html#section=windows
+After opening the project in IntelliJ, you should be able to just run it and see the output below.
